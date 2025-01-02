@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRIS VENDAS CPM - Conta Full Car Parking</title>
+    <title>CRIS VENDAS CPM - Loja Oficial</title>
     <style>
         /* Reset CSS */
         * {
@@ -149,12 +149,9 @@
         <!-- Segunda Conta -->
         <h3>Conta Full - 70 Carros com Plot</h3>
         <p>Confira abaixo tudo o que está incluído nesta conta:</p>
-        
-        <!-- Adicionando Imagens -->
         <img src="https://drive.google.com/uc?export=download&id=10lh9rnML643ZaFi6_GHSE4WTt62zfbBz" alt="Conta Full - Imagem 1">
         <img src="https://drive.google.com/uc?export=download&id=10dOReJkPCzPGcq5yeFQsHCXBotnisvJy" alt="Conta Full - Imagem 2">
         <img src="https://drive.google.com/uc?export=download&id=10bvSB7DHsI4_0-n8BlDMmf8_3Iq5ti1Y" alt="Conta Full - Imagem 3">
-        
         <ul>
             <li><strong>Dinheiro:</strong> 50 milhões.</li>
             <li><strong>Gold:</strong> 30 mil ou 500 mil (dependendo da sua escolha).</li>
@@ -176,20 +173,20 @@
         <!-- Golds -->
         <h3>Golds</h3>
         <ul>
-            <li>10K: R$ 2,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+10K+de+golds+por+R$2,00" class="cta">Comprar</a></li>
-            <li>30K: R$ 3,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+30K+de+golds+por+R$3,00" class="cta">Comprar</a></li>
-            <li>100K: R$ 4,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+100K+de+golds+por+R$4,00" class="cta">Comprar</a></li>
-            <li>500K: R$ 5,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+500K+de+golds+por+R$5,00" class="cta">Comprar</a></li>
+            <li><strong>10K de Golds:</strong> R$ 2,00 <a href="https://wa.me/5574999392169?text=Quero%2010k%20de%20Golds" target="_blank">Comprar Agora</a></li>
+            <li><strong>30K de Golds:</strong> R$ 3,00 <a href="https://wa.me/5574999392169?text=Quero%2030k%20de%20Golds" target="_blank">Comprar Agora</a></li>
+            <li><strong>100K de Golds:</strong> R$ 4,00 <a href="https://wa.me/5574999392169?text=Quero%20100k%20de%20Golds" target="_blank">Comprar Agora</a></li>
+            <li><strong>500K de Golds:</strong> R$ 5,00 <a href="https://wa.me/5574999392169?text=Quero%20500k%20de%20Golds" target="_blank">Comprar Agora</a></li>
         </ul>
 
         <!-- Dinheiro do Jogo -->
         <h3>Dinheiro do Jogo</h3>
         <ul>
-            <li>5M: R$ 0,50 <a href="https://wa.me/5574999392169?text=Quero+comprar+5M+de+dinheiro+do+jogo+por+R$0,50" class="cta">Comprar</a></li>
-            <li>10M: R$ 1,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+10M+de+dinheiro+do+jogo+por+R$1,00" class="cta">Comprar</a></li>
-            <li>30M: R$ 2,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+30M+de+dinheiro+do+jogo+por+R$2,00" class="cta">Comprar</a></li>
-            <li>40M: R$ 3,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+40M+de+dinheiro+do+jogo+por+R$3,00" class="cta">Comprar</a></li>
-            <li>50M: R$ 4,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+50M+de+dinheiro+do+jogo+por+R$4,00" class="cta">Comprar</a></li>
+            <li><strong>5M:</strong> R$ 0,50 <a href="https://wa.me/5574999392169?text=Quero%205M%20de%20Dinheiro%20do%20Jogo" target="_blank">Comprar Agora</a></li>
+            <li><strong>10M:</strong> R$ 1,00 <a href="https://wa.me/5574999392169?text=Quero%2010M%20de%20Dinheiro%20do%20Jogo" target="_blank">Comprar Agora</a></li>
+            <li><strong>30M:</strong> R$ 2,00 <a href="https://wa.me/5574999392169?text=Quero%2030M%20de%20Dinheiro%20do%20Jogo" target="_blank">Comprar Agora</a></li>
+            <li><strong>40M:</strong> R$ 3,00 <a href="https://wa.me/5574999392169?text=Quero%2040M%20de%20Dinheiro%20do%20Jogo" target="_blank">Comprar Agora</a></li>
+            <li><strong>50M:</strong> R$ 4,00 <a href="https://wa.me/5574999392169?text=Quero%2050M%20de%20Dinheiro%20do%20Jogo" target="_blank">Comprar Agora</a></li>
         </ul>
     </div>
 </body>
