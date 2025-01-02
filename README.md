@@ -113,49 +113,37 @@
         <h1>CRIS VENDAS CPM</h1>
     </header>
     <div class="container">
-        <h2>Detalhes das Contas</h2>
+        <h2>Detalhes dos Produtos</h2>
 
-        <!-- Primeira Conta -->
-        <h3>Conta Full - Todos os Carros</h3>
-        <p>Confira abaixo tudo o que está incluído nesta conta:</p>
+        <!-- Dinheiro do Jogo -->
+        <h3>Dinheiro do Jogo</h3>
+        <p>Confira as variações disponíveis:</p>
         <ul>
-            <li><strong>Dinheiro:</strong> 50 milhões.</li>
-            <li><strong>Gold:</strong> 30 mil ou 500 mil (dependendo da sua escolha).</li>
-            <li><strong>Todos os carros desbloqueados.</strong></li>
-            <li><strong>Todas as buzinas pagas.</strong></li>
-            <li><strong>Sirene instalada em alguns carros.</strong></li>
-            <li><strong>Motor W16 permanente na conta.</strong></li>
-            <li><strong>3ª casa paga liberada.</strong></li>
-            <li><strong>ID personalizado (opcional).</strong></li>
-            <li><strong>Nome colorido.</strong></li>
-            <li><strong>Título King.</strong></li>
-        </ul>
-        <h4>Preço</h4>
-        <p><strong>R$ 4,00</strong> - Pagamento via Pix ou transferência bancária.</p>
-        <div class="cta">
-            <a href="https://wa.me/5532991584303" target="_blank">Comprar Agora via WhatsApp</a>
-        </div>
+            <li><strong>5M:</strong> R$ 0,50</li>
+            <div class="cta">
+                <a href="https://wa.me/74999392169?text=Quero+comprar+5M+de+dinheiro+do+jogo+por+R$0,50">Comprar 5M</a>
+            </div>
 
-        <!-- Segunda Conta -->
-        <h3>Conta Full - 70 Carros com Plot</h3>
-        <p>Confira abaixo tudo o que está incluído nesta conta:</p>
-        <ul>
-            <li><strong>Dinheiro:</strong> 50 milhões.</li>
-            <li><strong>Gold:</strong> 30 mil ou 500 mil (dependendo da sua escolha).</li>
-            <li><strong>70 carros com plot incluídos.</strong></li>
-            <li><strong>Todas as buzinas pagas.</strong></li>
-            <li><strong>Sirene instalada em alguns carros.</strong></li>
-            <li><strong>Motor W16 permanente na conta.</strong></li>
-            <li><strong>3ª casa paga liberada.</strong></li>
-            <li><strong>ID personalizado (opcional).</strong></li>
-            <li><strong>Nome colorido.</strong></li>
-            <li><strong>Título King.</strong></li>
+            <li><strong>10M:</strong> R$ 1,00</li>
+            <div class="cta">
+                <a href="https://wa.me/74999392169?text=Quero+comprar+10M+de+dinheiro+do+jogo+por+R$1,00">Comprar 10M</a>
+            </div>
+
+            <li><strong>30M:</strong> R$ 2,00</li>
+            <div class="cta">
+                <a href="https://wa.me/74999392169?text=Quero+comprar+30M+de+dinheiro+do+jogo+por+R$2,00">Comprar 30M</a>
+            </div>
+
+            <li><strong>40M:</strong> R$ 3,00</li>
+            <div class="cta">
+                <a href="https://wa.me/74999392169?text=Quero+comprar+40M+de+dinheiro+do+jogo+por+R$3,00">Comprar 40M</a>
+            </div>
+
+            <li><strong>50M:</strong> R$ 4,00</li>
+            <div class="cta">
+                <a href="https://wa.me/74999392169?text=Quero+comprar+50M+de+dinheiro+do+jogo+por+R$4,00">Comprar 50M</a>
+            </div>
         </ul>
-        <h4>Preço</h4>
-        <p><strong>R$ 7,00</strong> - Pagamento via Pix ou transferência bancária.</p>
-        <div class="cta">
-            <a href="https://wa.me/5532991584303" target="_blank">Comprar Agora via WhatsApp</a>
-        </div>
     </div>
 </body>
-</html> 
+</html>
