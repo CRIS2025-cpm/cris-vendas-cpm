@@ -60,6 +60,13 @@
             background-color: #005bb5;
             transform: scale(1.1);
         }
+        img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 10px;
+        }
         /* Animações */
         @keyframes fadeInDown {
             from {
@@ -105,6 +112,9 @@
                 font-size: 14px;
                 padding: 8px 16px;
             }
+            img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -113,36 +123,73 @@
         <h1>CRIS VENDAS CPM</h1>
     </header>
     <div class="container">
-        <h2>Detalhes dos Produtos</h2>
+        <h2>Detalhes das Contas</h2>
+
+        <!-- Primeira Conta -->
+        <h3>Conta Full - Todos os Carros</h3>
+        <p>Confira abaixo tudo o que está incluído nesta conta:</p>
+        <ul>
+            <li><strong>Dinheiro:</strong> 50 milhões.</li>
+            <li><strong>Gold:</strong> 30 mil ou 500 mil (dependendo da sua escolha).</li>
+            <li><strong>Todos os carros desbloqueados.</strong></li>
+            <li><strong>Todas as buzinas pagas.</strong></li>
+            <li><strong>Sirene instalada em alguns carros.</strong></li>
+            <li><strong>Motor W16 permanente na conta.</strong></li>
+            <li><strong>3ª casa paga liberada.</strong></li>
+            <li><strong>ID personalizado (opcional).</strong></li>
+            <li><strong>Nome colorido.</strong></li>
+            <li><strong>Título King.</strong></li>
+        </ul>
+        <h4>Preço</h4>
+        <p><strong>R$ 4,00</strong> - Pagamento via Pix ou transferência bancária.</p>
+        <div class="cta">
+            <a href="https://wa.me/5574999392169" target="_blank">Comprar Agora via WhatsApp</a>
+        </div>
+
+        <!-- Segunda Conta -->
+        <h3>Conta Full - 70 Carros com Plot</h3>
+        <p>Confira abaixo tudo o que está incluído nesta conta:</p>
+        
+        <!-- Adicionando Imagens -->
+        <img src="https://drive.google.com/uc?export=download&id=10lh9rnML643ZaFi6_GHSE4WTt62zfbBz" alt="Conta Full - Imagem 1">
+        <img src="https://drive.google.com/uc?export=download&id=10dOReJkPCzPGcq5yeFQsHCXBotnisvJy" alt="Conta Full - Imagem 2">
+        <img src="https://drive.google.com/uc?export=download&id=10bvSB7DHsI4_0-n8BlDMmf8_3Iq5ti1Y" alt="Conta Full - Imagem 3">
+        
+        <ul>
+            <li><strong>Dinheiro:</strong> 50 milhões.</li>
+            <li><strong>Gold:</strong> 30 mil ou 500 mil (dependendo da sua escolha).</li>
+            <li><strong>70 carros com plot incluídos.</strong></li>
+            <li><strong>Todas as buzinas pagas.</strong></li>
+            <li><strong>Sirene instalada em alguns carros.</strong></li>
+            <li><strong>Motor W16 permanente na conta.</strong></li>
+            <li><strong>3ª casa paga liberada.</strong></li>
+            <li><strong>ID personalizado (opcional).</strong></li>
+            <li><strong>Nome colorido.</strong></li>
+            <li><strong>Título King.</strong></li>
+        </ul>
+        <h4>Preço</h4>
+        <p><strong>R$ 7,00</strong> - Pagamento via Pix ou transferência bancária.</p>
+        <div class="cta">
+            <a href="https://wa.me/5574999392169" target="_blank">Comprar Agora via WhatsApp</a>
+        </div>
+
+        <!-- Golds -->
+        <h3>Golds</h3>
+        <ul>
+            <li>10K: R$ 2,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+10K+de+golds+por+R$2,00" class="cta">Comprar</a></li>
+            <li>30K: R$ 3,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+30K+de+golds+por+R$3,00" class="cta">Comprar</a></li>
+            <li>100K: R$ 4,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+100K+de+golds+por+R$4,00" class="cta">Comprar</a></li>
+            <li>500K: R$ 5,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+500K+de+golds+por+R$5,00" class="cta">Comprar</a></li>
+        </ul>
 
         <!-- Dinheiro do Jogo -->
         <h3>Dinheiro do Jogo</h3>
-        <p>Confira as variações disponíveis:</p>
         <ul>
-            <li><strong>5M:</strong> R$ 0,50</li>
-            <div class="cta">
-                <a href="https://wa.me/74999392169?text=Quero+comprar+5M+de+dinheiro+do+jogo+por+R$0,50">Comprar 5M</a>
-            </div>
-
-            <li><strong>10M:</strong> R$ 1,00</li>
-            <div class="cta">
-                <a href="https://wa.me/74999392169?text=Quero+comprar+10M+de+dinheiro+do+jogo+por+R$1,00">Comprar 10M</a>
-            </div>
-
-            <li><strong>30M:</strong> R$ 2,00</li>
-            <div class="cta">
-                <a href="https://wa.me/74999392169?text=Quero+comprar+30M+de+dinheiro+do+jogo+por+R$2,00">Comprar 30M</a>
-            </div>
-
-            <li><strong>40M:</strong> R$ 3,00</li>
-            <div class="cta">
-                <a href="https://wa.me/74999392169?text=Quero+comprar+40M+de+dinheiro+do+jogo+por+R$3,00">Comprar 40M</a>
-            </div>
-
-            <li><strong>50M:</strong> R$ 4,00</li>
-            <div class="cta">
-                <a href="https://wa.me/74999392169?text=Quero+comprar+50M+de+dinheiro+do+jogo+por+R$4,00">Comprar 50M</a>
-            </div>
+            <li>5M: R$ 0,50 <a href="https://wa.me/5574999392169?text=Quero+comprar+5M+de+dinheiro+do+jogo+por+R$0,50" class="cta">Comprar</a></li>
+            <li>10M: R$ 1,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+10M+de+dinheiro+do+jogo+por+R$1,00" class="cta">Comprar</a></li>
+            <li>30M: R$ 2,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+30M+de+dinheiro+do+jogo+por+R$2,00" class="cta">Comprar</a></li>
+            <li>40M: R$ 3,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+40M+de+dinheiro+do+jogo+por+R$3,00" class="cta">Comprar</a></li>
+            <li>50M: R$ 4,00 <a href="https://wa.me/5574999392169?text=Quero+comprar+50M+de+dinheiro+do+jogo+por+R$4,00" class="cta">Comprar</a></li>
         </ul>
     </div>
 </body>
