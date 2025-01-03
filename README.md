@@ -23,7 +23,6 @@
             color: white;
             padding: 20px;
             text-align: center;
-            animation: fadeInDown 1.5s;
         }
         .container {
             max-width: 800px;
@@ -32,7 +31,6 @@
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
-            animation: fadeInUp 1.5s;
         }
         h1, h2, h3, h4 {
             color: #0078d7;
@@ -45,78 +43,40 @@
             text-align: center;
             margin-top: 20px;
         }
-        .cta a {
-            display: inline-block;
+        .cta button {
             padding: 10px 20px;
             background-color: #0078d7;
             color: white;
-            text-decoration: none;
+            border: none;
             border-radius: 5px;
             font-size: 16px;
-            transition: all 0.3s;
-            animation: pulse 2s infinite;
+            cursor: pointer;
         }
-        .cta a:hover {
+        .cta button:hover {
             background-color: #005bb5;
-            transform: scale(1.1);
-        }
-        img {
-            width: 100%;
-            max-width: 400px;
-            margin: 10px auto;
-            display: block;
-            border-radius: 10px;
-        }
-        /* Animações */
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-        }
-        /* Responsividade */
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            .container {
-                margin: 10px;
-                padding: 15px;
-            }
-            header {
-                padding: 15px;
-            }
-            .cta a {
-                font-size: 14px;
-                padding: 8px 16px;
-            }
-            img {
-                max-width: 100%;
-            }
         }
     </style>
+    <script>
+        let cart = [];
+
+        function addToCart(item) {
+            cart.push(item);
+            alert(`${item} foi adicionado ao carrinho!`);
+        }
+
+        function finalizePurchase() {
+            if (cart.length === 0) {
+                alert('Seu carrinho está vazio.');
+                return;
+            }
+
+            const cartItems = cart.join(', ');
+            const whatsappMessage = `Olá, gostaria de comprar os seguintes itens: ${cartItems}`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://wa.me/5574999392169?text=${encodedMessage}`;
+            window.location.href = whatsappUrl;
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -127,67 +87,51 @@
 
         <!-- Primeira Conta -->
         <h3>Conta Full - Todos os Carros</h3>
-        <p>Confira abaixo tudo o que está incluído nesta conta:</p>
         <ul>
-            <li><strong>Dinheiro:</strong> 50 milhões.</li>
-            <li><strong>Gold:</strong> 30 mil ou 500 mil (dependendo da sua escolha).</li>
-            <li><strong>Todos os carros desbloqueados.</strong></li>
-            <li><strong>Todas as buzinas pagas.</strong></li>
-            <li><strong>Sirene instalada em alguns carros.</strong></li>
-            <li><strong>Motor W16 permanente na conta.</strong></li>
-            <li><strong>3ª casa paga liberada.</strong></li>
-            <li><strong>ID personalizado (opcional).</strong></li>
-            <li><strong>Nome colorido.</strong></li>
-            <li><strong>Título King.</strong></li>
+            <li>50 milhões de Dinheiro</li>
+            <li>30 mil ou 500 mil de Gold</li>
+            <li>Todos os carros desbloqueados</li>
         </ul>
-        <h4>Preço</h4>
-        <p><strong>R$ 4,00</strong> - Pagamento via Pix ou transferência bancária.</p>
+        <h4>Preço: R$ 4,00</h4>
         <div class="cta">
-            <a href="https://wa.me/5574999392169" target="_blank">Comprar Agora via WhatsApp</a>
+            <button onclick="addToCart('Conta Full - Todos os Carros')">Adicionar ao Carrinho</button>
         </div>
 
         <!-- Segunda Conta -->
         <h3>Conta Full - 70 Carros com Plot</h3>
-        <p>Confira abaixo tudo o que está incluído nesta conta:</p>
-        <img src="https://drive.google.com/uc?export=download&id=10lh9rnML643ZaFi6_GHSE4WTt62zfbBz" alt="Conta Full - Imagem 1">
-        <img src="https://drive.google.com/uc?export=download&id=10dOReJkPCzPGcq5yeFQsHCXBotnisvJy" alt="Conta Full - Imagem 2">
-        <img src="https://drive.google.com/uc?export=download&id=10bvSB7DHsI4_0-n8BlDMmf8_3Iq5ti1Y" alt="Conta Full - Imagem 3">
         <ul>
-            <li><strong>Dinheiro:</strong> 50 milhões.</li>
-            <li><strong>Gold:</strong> 30 mil ou 500 mil (dependendo da sua escolha).</li>
-            <li><strong>70 carros com plot incluídos.</strong></li>
-            <li><strong>Todas as buzinas pagas.</strong></li>
-            <li><strong>Sirene instalada em alguns carros.</strong></li>
-            <li><strong>Motor W16 permanente na conta.</strong></li>
-            <li><strong>3ª casa paga liberada.</strong></li>
-            <li><strong>ID personalizado (opcional).</strong></li>
-            <li><strong>Nome colorido.</strong></li>
-            <li><strong>Título King.</strong></li>
+            <li>50 milhões de Dinheiro</li>
+            <li>30 mil ou 500 mil de Gold</li>
+            <li>70 Carros com Plot</li>
         </ul>
-        <h4>Preço</h4>
-        <p><strong>R$ 7,00</strong> - Pagamento via Pix ou transferência bancária.</p>
+        <h4>Preço: R$ 7,00</h4>
         <div class="cta">
-            <a href="https://wa.me/5574999392169" target="_blank">Comprar Agora via WhatsApp</a>
+            <button onclick="addToCart('Conta Full - 70 Carros com Plot')">Adicionar ao Carrinho</button>
         </div>
 
         <!-- Golds -->
         <h3>Golds</h3>
         <ul>
-            <li><strong>10K de Golds:</strong> R$ 2,00 <a href="https://wa.me/5574999392169?text=Quero%2010k%20de%20Golds" target="_blank">Comprar Agora</a></li>
-            <li><strong>30K de Golds:</strong> R$ 3,00 <a href="https://wa.me/5574999392169?text=Quero%2030k%20de%20Golds" target="_blank">Comprar Agora</a></li>
-            <li><strong>100K de Golds:</strong> R$ 4,00 <a href="https://wa.me/5574999392169?text=Quero%20100k%20de%20Golds" target="_blank">Comprar Agora</a></li>
-            <li><strong>500K de Golds:</strong> R$ 5,00 <a href="https://wa.me/5574999392169?text=Quero%20500k%20de%20Golds" target="_blank">Comprar Agora</a></li>
+            <li>10K de Golds: R$ 2,00 <button onclick="addToCart('10K de Golds')">Adicionar ao Carrinho</button></li>
+            <li>30K de Golds: R$ 3,00 <button onclick="addToCart('30K de Golds')">Adicionar ao Carrinho</button></li>
+            <li>100K de Golds: R$ 4,00 <button onclick="addToCart('100K de Golds')">Adicionar ao Carrinho</button></li>
+            <li>500K de Golds: R$ 5,00 <button onclick="addToCart('500K de Golds')">Adicionar ao Carrinho</button></li>
         </ul>
 
         <!-- Dinheiro do Jogo -->
         <h3>Dinheiro do Jogo</h3>
         <ul>
-            <li><strong>5M:</strong> R$ 0,50 <a href="https://wa.me/5574999392169?text=Quero%205M%20de%20Dinheiro%20do%20Jogo" target="_blank">Comprar Agora</a></li>
-            <li><strong>10M:</strong> R$ 1,00 <a href="https://wa.me/5574999392169?text=Quero%2010M%20de%20Dinheiro%20do%20Jogo" target="_blank">Comprar Agora</a></li>
-            <li><strong>30M:</strong> R$ 2,00 <a href="https://wa.me/5574999392169?text=Quero%2030M%20de%20Dinheiro%20do%20Jogo" target="_blank">Comprar Agora</a></li>
-            <li><strong>40M:</strong> R$ 3,00 <a href="https://wa.me/5574999392169?text=Quero%2040M%20de%20Dinheiro%20do%20Jogo" target="_blank">Comprar Agora</a></li>
-            <li><strong>50M:</strong> R$ 4,00 <a href="https://wa.me/5574999392169?text=Quero%2050M%20de%20Dinheiro%20do%20Jogo" target="_blank">Comprar Agora</a></li>
+            <li>5M: R$ 0,50 <button onclick="addToCart('5M de Dinheiro do Jogo')">Adicionar ao Carrinho</button></li>
+            <li>10M: R$ 1,00 <button onclick="addToCart('10M de Dinheiro do Jogo')">Adicionar ao Carrinho</button></li>
+            <li>30M: R$ 2,00 <button onclick="addToCart('30M de Dinheiro do Jogo')">Adicionar ao Carrinho</button></li>
+            <li>40M: R$ 3,00 <button onclick="addToCart('40M de Dinheiro do Jogo')">Adicionar ao Carrinho</button></li>
+            <li>50M: R$ 4,00 <button onclick="addToCart('50M de Dinheiro do Jogo')">Adicionar ao Carrinho</button></li>
         </ul>
+
+        <!-- Finalizar Compra -->
+        <div class="cta">
+            <button onclick="finalizePurchase()">Finalizar Compra</button>
+        </div>
     </div>
 </body>
 </html>
