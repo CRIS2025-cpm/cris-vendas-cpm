@@ -55,13 +55,28 @@
         .cta button:hover {
             background-color: #005bb5;
         }
+        .quantity-input {
+            width: 60px;
+            padding: 5px;
+            text-align: center;
+            margin-right: 10px;
+        }
     </style>
     <script>
         let cart = [];
 
-        function addToCart(item) {
-            cart.push(item);
-            alert(`${item} foi adicionado ao carrinho!`);
+        function addToCart(item, quantity) {
+            if (quantity <= 0 || isNaN(quantity)) {
+                alert('Por favor, insira uma quantidade válida.');
+                return;
+            }
+            cart.push({ item, quantity });
+            alert(`${quantity} unidade(s) de "${item}" foram adicionadas ao carrinho!`);
+        }
+
+        function removeFromCart(item) {
+            cart = cart.filter(cartItem => cartItem.item !== item);
+            alert(`"${item}" foi removido do carrinho.`);
         }
 
         function finalizePurchase() {
@@ -70,8 +85,8 @@
                 return;
             }
 
-            const cartItems = cart.join(', ');
-            const whatsappMessage = `Olá, gostaria de comprar os seguintes itens: ${cartItems}`;
+            const cartSummary = cart.map(cartItem => `${cartItem.quantity}x ${cartItem.item}`).join(', ');
+            const whatsappMessage = `Olá, gostaria de comprar os seguintes itens: ${cartSummary}`;
             const encodedMessage = encodeURIComponent(whatsappMessage);
             const whatsappUrl = `https://wa.me/5574999392169?text=${encodedMessage}`;
             window.location.href = whatsappUrl;
@@ -94,7 +109,9 @@
         </ul>
         <h4>Preço: R$ 4,00</h4>
         <div class="cta">
-            <button onclick="addToCart('Conta Full - Todos os Carros')">Adicionar ao Carrinho</button>
+            <input type="number" class="quantity-input" id="quant1" placeholder="Qtd" min="1">
+            <button onclick="addToCart('Conta Full - Todos os Carros', parseInt(document.getElementById('quant1').value))">Adicionar ao Carrinho</button>
+            <button onclick="removeFromCart('Conta Full - Todos os Carros')">Remover</button>
         </div>
 
         <!-- Segunda Conta -->
@@ -106,26 +123,49 @@
         </ul>
         <h4>Preço: R$ 7,00</h4>
         <div class="cta">
-            <button onclick="addToCart('Conta Full - 70 Carros com Plot')">Adicionar ao Carrinho</button>
+            <input type="number" class="quantity-input" id="quant2" placeholder="Qtd" min="1">
+            <button onclick="addToCart('Conta Full - 70 Carros com Plot', parseInt(document.getElementById('quant2').value))">Adicionar ao Carrinho</button>
+            <button onclick="removeFromCart('Conta Full - 70 Carros com Plot')">Remover</button>
         </div>
 
         <!-- Golds -->
         <h3>Golds</h3>
         <ul>
-            <li>10K de Golds: R$ 2,00 <button onclick="addToCart('10K de Golds')">Adicionar ao Carrinho</button></li>
-            <li>30K de Golds: R$ 3,00 <button onclick="addToCart('30K de Golds')">Adicionar ao Carrinho</button></li>
-            <li>100K de Golds: R$ 4,00 <button onclick="addToCart('100K de Golds')">Adicionar ao Carrinho</button></li>
-            <li>500K de Golds: R$ 5,00 <button onclick="addToCart('500K de Golds')">Adicionar ao Carrinho</button></li>
+            <li>10K de Golds: R$ 2,00 
+                <input type="number" class="quantity-input" id="gold10" placeholder="Qtd" min="1">
+                <button onclick="addToCart('10K de Golds', parseInt(document.getElementById('gold10').value))">Adicionar</button>
+                <button onclick="removeFromCart('10K de Golds')">Remover</button>
+            </li>
+            <li>30K de Golds: R$ 3,00 
+                <input type="number" class="quantity-input" id="gold30" placeholder="Qtd" min="1">
+                <button onclick="addToCart('30K de Golds', parseInt(document.getElementById('gold30').value))">Adicionar</button>
+                <button onclick="removeFromCart('30K de Golds')">Remover</button>
+            </li>
+            <li>100K de Golds: R$ 4,00 
+                <input type="number" class="quantity-input" id="gold100" placeholder="Qtd" min="1">
+                <button onclick="addToCart('100K de Golds', parseInt(document.getElementById('gold100').value))">Adicionar</button>
+                <button onclick="removeFromCart('100K de Golds')">Remover</button>
+            </li>
         </ul>
 
         <!-- Dinheiro do Jogo -->
         <h3>Dinheiro do Jogo</h3>
         <ul>
-            <li>5M: R$ 0,50 <button onclick="addToCart('5M de Dinheiro do Jogo')">Adicionar ao Carrinho</button></li>
-            <li>10M: R$ 1,00 <button onclick="addToCart('10M de Dinheiro do Jogo')">Adicionar ao Carrinho</button></li>
-            <li>30M: R$ 2,00 <button onclick="addToCart('30M de Dinheiro do Jogo')">Adicionar ao Carrinho</button></li>
-            <li>40M: R$ 3,00 <button onclick="addToCart('40M de Dinheiro do Jogo')">Adicionar ao Carrinho</button></li>
-            <li>50M: R$ 4,00 <button onclick="addToCart('50M de Dinheiro do Jogo')">Adicionar ao Carrinho</button></li>
+            <li>5M: R$ 0,50 
+                <input type="number" class="quantity-input" id="money5" placeholder="Qtd" min="1">
+                <button onclick="addToCart('5M de Dinheiro do Jogo', parseInt(document.getElementById('money5').value))">Adicionar</button>
+                <button onclick="removeFromCart('5M de Dinheiro do Jogo')">Remover</button>
+            </li>
+            <li>10M: R$ 1,00 
+                <input type="number" class="quantity-input" id="money10" placeholder="Qtd" min="1">
+                <button onclick="addToCart('10M de Dinheiro do Jogo', parseInt(document.getElementById('money10').value))">Adicionar</button>
+                <button onclick="removeFromCart('10M de Dinheiro do Jogo')">Remover</button>
+            </li>
+            <li>30M: R$ 2,00 
+                <input type="number" class="quantity-input" id="money30" placeholder="Qtd" min="1">
+                <button onclick="addToCart('30M de Dinheiro do Jogo', parseInt(document.getElementById('money30').value))">Adicionar</button>
+                <button onclick="removeFromCart('30M de Dinheiro do Jogo')">Remover</button>
+            </li>
         </ul>
 
         <!-- Finalizar Compra -->
